@@ -8,7 +8,7 @@ var binVersion = packageInfo.version.replace(/^(\d+\.\d+\.\d+).*$/, "$1");
 var root = "https://github.com/elm-lang/elm-platform/releases/download/" + binVersion + "-exp/elm-platform";
 
 module.exports = binwrap({
-  binaries: ["elm", "elm-make", "elm-repl", "elm-reactor", "elm-package"],
+  binaries: ["elm"],
   urls: {
     "darwin-x64": root + "-macos.tar.gz",
     "win32-x64": root + "-windows.tar.gz",
